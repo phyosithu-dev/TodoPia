@@ -1,5 +1,4 @@
 🎯 Key Features
-project images
 ![Screenshot (5)](https://github.com/user-attachments/assets/03e3a483-75e3-44aa-9bd2-d3589c2195e2)
 ![modified2](https://github.com/user-attachments/assets/b49ce956-f0f1-4106-bd12-19b1a2ef7abc)
 
