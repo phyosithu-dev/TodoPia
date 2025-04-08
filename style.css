@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #6441a5; /* fallback for old browsers */
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: "Poppins", sans-serif;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.form-container {
+  max-width: 400px;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  margin-left: 40px;
+}
+h1 {
+  font-size: 35px;
+}
+label {
+  display: block;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #292e3c;
+  border: none; /* Explicitly remove border */
+  outline: none; /* Remove default focus outline */
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+input:focus {
+  /* outline: none; */
+  transform: scale(1.05); /* Scale up by 5% */
+}
+.date-input {
+  width: 100%;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+  margin-bottom: 40px;
+}
+
+#task-list {
+  width: 700px;
+  padding: 20px;
+  min-height: 650px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px;
+  font-size: 14px;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.153
+  ); /* Semi-transparent white background */
+  backdrop-filter: blur(15px); /* Blur effect */
+  border-radius: 20px; /* Rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.task-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  color: white;
+  background-color: #253237;
+  padding: 10px;
+  width: 300px;
+  overflow-wrap: break-word;
+  height: 250px;
+}
+.task-item i {
+  cursor: pointer;
+  font-size: 20px;
+  color: #ff0000;
+  margin-right: 10px;
+}
+.task-item span {
+  font-size: 15px;
+}
+p {
+  width: 100%;
+  font-weight: 300;
+}
+.cta-button {
+  width: 100%;
+  background-color: #a933f6;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 15px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+.editHighlight {
+  border: 2px solid #3498db;
+}
+.task-type {
+  margin-bottom: 20px;
+}
+h3 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+#important,
+#planned {
+  transition: background-color 0.5s ease;
+}
+#food {
+  background-color: #fd6d6e;
+}
+.food-text {
+  color: #fd6d6e;
+}
+#workout {
+  background-color: #f19731;
+}
+.workout-text {
+  color: #f19731;
+}
+#work {
+  background-color: #52b788;
+}
+.work-text {
+  color: #52b788;
+}
+#design {
+  background-color: #234ebc;
+}
+.design-text {
+  color: #234ebc;
+}
+#run {
+  background-color: #2ac8d9;
+}
+.run-text {
+  color: #2ac8d9;
+}
+.btn {
+  cursor: pointer;
+  border: none;
+  background-color: #1d1f25;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 14px;
+  margin-right: 20px;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1); /* Default scale */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Default shadow */
+}
+.selected {
+  transform: scale(1.3); /* Scale up by 10% */
+  /* box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3); */
+}
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+@media (max-width: 480px) {
+  .form-container,
+  #task-list {
+    width: 100%;
+    margin: 10px 0;
+  }
+  h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .form-container {
+    margin-left: 10px;
+  }
+  #task-list {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
