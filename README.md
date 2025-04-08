@@ -9,7 +9,7 @@
     🔄 Seamless Transfer: All original task details automatically fill the creation form
 
     💾 One-Click Save: Just hit "Save Changes" when done
-    
+ ---
 🎨 Visual Feedback
 
     ✅ Instant Updates: Changes appear immediately
@@ -17,7 +17,7 @@
     🖍️ Color Coding: Different colors for different categories
 
     🔍 Clear Focus: Active elements highlighted
-    
+---
 💡 Pro Tips
 
     🖱️ Quick Edit: Click any task's ✏️ icon to modify
@@ -25,7 +25,7 @@
     🗑️ Easy Cleanup: Remove tasks with the 🗑️ icon
 
     ⏰ Schedule Smart: Use the 📅 picker for deadlines
-
+---
 🛠️ Technology Used
 
     🌐 Frontend: HTML5, CSS3, JavaScript
